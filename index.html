@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>PHONIE</title>
+ 
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/app.css" />
+  <link rel="shortcut icon" href="./img/Phonie Logo.png">
+  <meta name="theme-color" content="#fff" />
+
+</head>
+
+<body>
+  <header>
+    <h1>PHONIE 🚀</h1>
+    <p class="text-center">Check a +234 telephone number to instantly detect the network provider!.</p>
+  </header>
+
+  <section id="userInput">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+
+          <!--PHONIE Form -->
+          <form id="nettyFinderForm" onsubmit="compute(event)">
+
+            <div class="form-group">
+              <div class="col-md-12">
+                <div class="alert alert-danger text-center" role="alert">
+                  Enter number e.g 08105337108 or +2348105337108
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <label for="telephone">Enter telephone number: </label>
+                <input type="text" name="telephone number" id="telephone" class="form-control"
+                  placeholder="08049295829" autocomplete="off">
+              </div>
+              <div class="col-md-6 col-sm-3">
+                <button type="submit" class="btn submit-btn form-control">Check Network</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="container gif">
+            <img src="./img/Phonie Background - 1.png" class="img-responsive" alt="PHONIE - Detecting your network provider OTG">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-3 col-sm-12 ">
+          <div class="footer-thumb">
+            <div class="shareButton">
+              <a href="https://twitter.com/intent/tweet?&ref_src=twsrc%5Etfw" class="twitter-mention-button"
+                data-size="large"
+                data-text="I just tried out #PHONIE and it got the network of my 🇳🇬 telephone number correctly. Check it out!! cc: @SammyOkeji"
+                data-show-count="false">Tweet to @SammyOkeji</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="col-md-5 col-sm-12 ">
+          <div class="copyright-text ">
+            <h4>
+              Made with 💙 by
+              <a href="https://samsonokeji-portfolio.netlify.app">SAMSON OKEJI</a>
+            </h4>
+            <p>&copy; 2022 - <span id="copy_year"></span>
+            </p>
+          </div>
+        </div>
+
+  </footer>
+
+  <script src="./src/network-detect.js"></script>
+  <script src="./src/Toast.js"></script>
+  <script src="./src/app.js"></script>
+</body>
+
+</html>
