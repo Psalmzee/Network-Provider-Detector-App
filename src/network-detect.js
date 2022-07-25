@@ -96,7 +96,7 @@ NetworkDetect.prototype = {
   validate: function () {
     //Check if no value is passed
     if (!this.phone) {
-      throw new Error("Invalid Entry!, Please Enter a Valid Telephone Number");
+      throw new Error("Invalid entry, enter a telephone number");
     }
 
     //Check if number contains unwanted characters
