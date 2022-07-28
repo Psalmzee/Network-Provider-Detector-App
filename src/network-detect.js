@@ -37,6 +37,7 @@ NetworkDetect.prototype = {
     let networks = this.getNetworks();
 
     if (networks.mtn.includes(phone_primary_prefix)) {
+
       return "MTN";
     }
 

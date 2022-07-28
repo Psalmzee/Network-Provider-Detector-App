@@ -19,7 +19,8 @@ const compute = function (ev) {
     return new Toast({
       message: `${phone} belongs to the ${network} network`,
       type: `${network}`,
-    });
+      }
+    );
   } catch (e) {
     return new Toast({
       message: e.message,
